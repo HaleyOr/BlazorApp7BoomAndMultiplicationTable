@@ -1,0 +1,27 @@
+﻿body {
+    background-image: url('img/roses.png');
+}
+
+h1{
+    font-size: 80px;
+    font-family: cursive;
+    text-align: center;
+    color: hotpink;
+    text-shadow: 2px 2px forestgreen, -2px 2px forestgreen, 2px -2px forestgreen, -2px -2px forestgreen;
+    margin-top: 12%;
+}
+
+p{
+    font-family: cursive;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+img{
+    width: 400px;
+    height: 450px;
+    position: fixed;
+    left: 15%;
+    bottom: 0;
+}

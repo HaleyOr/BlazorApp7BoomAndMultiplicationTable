@@ -1,0 +1,41 @@
+﻿@page "/7Boom"
+
+<head>
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+
+<h1>7 BOOM!</h1>
+<table>
+        @for (int i = 0; i <= 9; i++)
+        {
+            <tr>
+                @for (int k = 1; k <= 10; k++)
+                {
+                    int num = i * 10 + k;
+                    if (num % 7 == 0 || Exist7(num))
+                    {
+                        <th><img src="img/boom.png" width="70" height="50" alt="Boom!"></th>
+                    }
+                    else
+                    {
+                        <th>@num</th>
+                    }
+                }
+            </tr>
+        }
+</table>
+
+
+
+@code {
+    private static bool Exist7(int num)
+    {
+        while (num > 0)
+        {
+            if (num % 10 == 7)
+                return true;
+            num /= 10;
+        }
+        return false;
+    }
+}

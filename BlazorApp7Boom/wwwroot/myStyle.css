@@ -1,0 +1,25 @@
+﻿body {
+    background-image: url('img/bluecomicbackground.png');
+    background-size: cover;
+}
+
+table {
+    text-align: center;
+    background-color: #ffeabd;
+    margin: 0 auto;
+    margin-top: 45px;
+    width: 60%;
+    height: 60%;
+    border-radius: 3%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Mongolian Baiti';
+    font-weight: 300;
+    font-size: 80px;
+    color: red;
+    text-shadow: 2px 2px yellow, -2px 2px yellow, 2px -2px yellow, -2px -2px yellow;
+    margin-top: 35px;
+}
+

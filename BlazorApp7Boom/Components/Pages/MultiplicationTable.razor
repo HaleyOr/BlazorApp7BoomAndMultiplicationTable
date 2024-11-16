@@ -1,0 +1,40 @@
+﻿@page "/MultiplicationTable"
+
+<head>
+    <link rel="stylesheet" href="myStyle2.css">
+</head>
+
+<h1>Multiplication Table</h1>
+<div class="left">
+    <div class="row">
+        <div class="col-md-7">
+            <table>
+                @for (int i = 1; i <= 10; i++)
+                {
+                    <tr>
+                        @for (int k = 1; k <= 10; k++)
+                        {
+                            int num = i * k;
+                            if (i == 1 || k == 1)
+                            {
+                                <th>@num</th>
+                            }
+                            else
+                            {
+                                <td>@num</td>
+                            }
+                        }
+                    </tr>
+                }
+            </table>
+        </div>
+        <div class="col-md-5">
+            <img src="img/calculator.png" alt="yellow calculator">
+        </div>
+    </div>
+</div>
+
+
+
+@code {
+}
